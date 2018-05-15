@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	body{
+			margin: 0px;
+			padding:0px;
+		}
+		#mycanvas{
+			border: 1px solid #9c9898;
+			background-color: #77ffcc;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var canvas = document.getElementById("mycanvas");
+			var context = canvas.getContext("2d");
+			var x =canvas.width/2;
+			var y=canvas.height/2;
+			/*context.font="italic 40px Arial";
+			context.fillStyle="#FF0000";
+			context.fillText("Hello World!",x,y);*/
+			context.font="italic 40px Arial";
+			context.strokeStyle="#0000ff";
+			context.lineWidth=2;
+			context.strokeText=("Hello World!",x,y);
+
+
+
+		};
+	</script>
+</head>
+<body>
+<canvas id="mycanvas" width="578" height="200">
+	不支持canvas元素，更新浏览器
+</canvas>
+
+</body>
+</html>
